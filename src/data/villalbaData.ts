@@ -25,9 +25,9 @@ export const villalbaProfile = {
   totalClubGoals: 338,
   totalClubAssists: 142,
   totalClubTrophies: 22,
-  totalSeleccionGames: 35,
-  totalSeleccionGoals: 27,
-  totalSeleccionAssists: 11,
+  totalSeleccionGames: 41,
+  totalSeleccionGoals: 26,
+  totalSeleccionAssists: 12,
   totalSeleccionTrophies: 5,
   careerXG: 312.4,
   careerXA: 118.6,
@@ -127,11 +127,11 @@ export const seleccionData: SeleccionSeason[] = [
   { year: 2021, event: "Amistosos Internacionales", goals: 1, games: 2, assists: 0, xG: 0.9 },
   { year: 2022, event: "Copa Sudamérica (Campeón)", goals: 5, games: 6, assists: 2, xG: 4.2 },
   { year: 2023, event: "Copa de las Américas (Campeón)", goals: 2, games: 1, assists: 1, xG: 1.4 },
-  { year: 2023, event: "Copa Mundial FIFA (Campeón & Bota de Oro)", goals: 8, games: 7, assists: 3, xG: 6.8 },
+  { year: 2023, event: "Copa Mundial FIFA (Campeón & Bota de Oro)", goals: 4, games: 7, assists: 3, xG: 3.7 },
   { year: 2024, event: "Amistosos Internacionales", goals: 2, games: 3, assists: 1, xG: 1.7 },
   { year: 2025, event: "Copa Sudamérica (Bicampeón)", goals: 4, games: 6, assists: 1, xG: 3.5 },
   { year: 2026, event: "Copa de las Américas (Bicampeón)", goals: 1, games: 1, assists: 0, xG: 0.9 },
-  { year: 2026, event: "Copa Mundial FIFA (Retiro de la Selección)", goals: "-", games: "-", assists: 0, xG: 0 },
+  { year: 2026, event: "Copa Mundial FIFA (Retiro de la Selección)", goals: 3, games: 6, assists: 1, xG: 2.6 },
 ];
 
 export const amistosos2018Matches: MatchDetail[] = [

@@ -25,12 +25,13 @@ export const HeroHeader: React.FC<HeroHeaderProps> = ({ onOpenAiScout }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
             
             {/* Player Photo Bento Card */}
-            <div className="lg:col-span-4 bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-3xl relative overflow-hidden border border-white/5 flex flex-col justify-between min-h-[380px] p-6 shadow-xl">
-              <div
-                className="absolute inset-0 bg-cover bg-top opacity-50 mix-blend-luminosity hover:opacity-75 transition-opacity duration-500"
-                style={{ backgroundImage: `url(${villalbaImage})` }}
+            <div className="lg:col-span-4 bg-neutral-900 rounded-3xl relative overflow-hidden border border-white/10 flex flex-col justify-between min-h-[420px] p-6 shadow-2xl group">
+              <img
+                src={villalbaImage}
+                alt="Luciano Villalba"
+                className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-black/10" />
 
               {/* Badges Top Row */}
               <div className="relative z-10 flex items-center justify-between">
@@ -131,7 +132,7 @@ export const HeroHeader: React.FC<HeroHeaderProps> = ({ onOpenAiScout }) => {
                     {villalbaProfile.totalClubGoals + villalbaProfile.totalSeleccionGoals}
                   </div>
                   <div className="text-[10px] text-indigo-400 font-bold uppercase mt-2">
-                    338 Club + 27 Arg
+                    {villalbaProfile.totalClubGoals} Club + {villalbaProfile.totalSeleccionGoals} Arg
                   </div>
                 </div>
 
@@ -142,7 +143,7 @@ export const HeroHeader: React.FC<HeroHeaderProps> = ({ onOpenAiScout }) => {
                     {villalbaProfile.totalClubGames + villalbaProfile.totalSeleccionGames}
                   </div>
                   <div className="text-[10px] text-white/40 font-bold uppercase mt-2">
-                    568 Club + 35 Arg
+                    {villalbaProfile.totalClubGames} Club + {villalbaProfile.totalSeleccionGames} Arg
                   </div>
                 </div>
 

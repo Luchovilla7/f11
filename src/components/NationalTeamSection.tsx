@@ -204,7 +204,7 @@ export const NationalTeamSection: React.FC = () => {
               <span className="text-3xl">🌍</span>
               <div>
                 <div className="font-bold text-indigo-400 text-sm">Copa Mundial FIFA</div>
-                <div className="text-xs text-white/60">Campeón 2023 (8 Goles)</div>
+                <div className="text-xs text-white/60">Campeón 2023 (4 Goles) • Retiro 2026 (3 Goles)</div>
               </div>
             </div>
 

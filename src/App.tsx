@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { Navbar } from "./components/Navbar";
 import { HeroHeader } from "./components/HeroHeader";
+import { PageHeader } from "./components/PageHeader";
 import { AdvancedStatsOverview } from "./components/AdvancedStatsOverview";
 import { InteractivePitch } from "./components/InteractivePitch";
 import { CareerTimeline } from "./components/CareerTimeline";
@@ -15,43 +17,141 @@ export default function App() {
   const [isAiModalOpen, setIsAiModalOpen] = useState<boolean>(false);
 
   return (
-    <div className="min-h-screen bg-[#050505] text-slate-100 font-sans selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-[#050505] text-slate-100 font-sans selection:bg-indigo-500 selection:text-white flex flex-col justify-between">
       
-      {/* Top Navbar */}
-      <Navbar
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        onOpenAiScout={() => setIsAiModalOpen(true)}
-      />
+      <div>
+        {/* Top Navbar */}
+        <Navbar
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          onOpenAiScout={() => setIsAiModalOpen(true)}
+        />
 
-      {/* Main Content Area */}
-      <main className="space-y-4">
-        
-        {/* Player Profile Hero Section */}
-        <HeroHeader onOpenAiScout={() => setIsAiModalOpen(true)} />
+        {/* Main Content Area — Separate Pages per Tab */}
+        <main className="py-6">
+          <AnimatePresence mode="wait">
+            {activeTab === "profile" && (
+              <motion.div
+                key="profile"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-8"
+              >
+                <HeroHeader onOpenAiScout={() => setIsAiModalOpen(true)} />
+                <CareerTimeline />
+                <PalmaresSection />
+              </motion.div>
+            )}
 
-        {/* Advanced Stats & xG Charts */}
-        <AdvancedStatsOverview />
+            {activeTab === "advanced-stats" && (
+              <motion.div
+                key="advanced-stats"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-6"
+              >
+                <PageHeader
+                  title="Estadísticas Avanzadas & xG"
+                  subtitle="Analítica biomecánica, rendimiento xG vs Goles reales, radar de atributos y métricas Opta/StatsBomb de Luciano Villalba."
+                  badge="Analítica Opta / xG"
+                  badgeColor="indigo"
+                  onGoToProfile={() => setActiveTab("profile")}
+                  onOpenAiScout={() => setIsAiModalOpen(true)}
+                />
+                <AdvancedStatsOverview />
+              </motion.div>
+            )}
 
-        {/* Interactive Tactical Pitch & Shot Map */}
-        <InteractivePitch />
+            {activeTab === "tactical-pitch" && (
+              <motion.div
+                key="tactical-pitch"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-6"
+              >
+                <PageHeader
+                  title="Pizarra Táctica & Mapa de Tiros"
+                  subtitle="Visualización interactiva en 2D de zonas de remate, mapas de calor, perfil de disparos y rol táctico ofensivo."
+                  badge="Mapa de Tiros 2D"
+                  badgeColor="amber"
+                  onGoToProfile={() => setActiveTab("profile")}
+                  onOpenAiScout={() => setIsAiModalOpen(true)}
+                />
+                <InteractivePitch />
+              </motion.div>
+            )}
 
-        {/* Career Timeline (17 Seasons) */}
-        <CareerTimeline />
+            {activeTab === "seleccion" && (
+              <motion.div
+                key="seleccion"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-6"
+              >
+                <PageHeader
+                  title="Selección Argentina 🇦🇷"
+                  subtitle="Paso histórico de Luciano Villalba por la Albiceleste: Campeón del Mundo FIFA 2023, Bicampeón Sudamericano y debut 2018."
+                  badge="Carrera Internacional"
+                  badgeColor="sky"
+                  onGoToProfile={() => setActiveTab("profile")}
+                  onOpenAiScout={() => setIsAiModalOpen(true)}
+                />
+                <NationalTeamSection />
+              </motion.div>
+            )}
 
-        {/* Club Palmares */}
-        <PalmaresSection />
+            {activeTab === "fútbol-argentino" && (
+              <motion.div
+                key="fútbol-argentino"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-6"
+              >
+                <PageHeader
+                  title="Fútbol Argentino — Dominancia Provincial"
+                  subtitle="Estadísticas históricas oficiales del palmarés provincial en la Liga Argentina, Copa Argentina y Supercopa Argentina (1965–2025)."
+                  badge="Palmarés AFA"
+                  badgeColor="indigo"
+                  onGoToProfile={() => setActiveTab("profile")}
+                  onOpenAiScout={() => setIsAiModalOpen(true)}
+                />
+                <ArgentineFootballSection />
+              </motion.div>
+            )}
 
-        {/* Selección Argentina Section (Includes 2018 Amistosos) */}
-        <NationalTeamSection />
-
-        {/* Fútbol Argentino (Liga, Copa, Supercopa) */}
-        <ArgentineFootballSection />
-
-        {/* Fútbol Sudamericano (Campeonato Sudamericano) */}
-        <SouthAmericanFootballSection />
-
-      </main>
+            {activeTab === "fútbol-sudamericano" && (
+              <motion.div
+                key="fútbol-sudamericano"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-6"
+              >
+                <PageHeader
+                  title="Fútbol Sudamericano por Regiones"
+                  subtitle="Tabla general de títulos sudamericanos CONMEBOL conseguidos por regiones y departamentos de América del Sur."
+                  badge="CONMEBOL Stats"
+                  badgeColor="emerald"
+                  onGoToProfile={() => setActiveTab("profile")}
+                  onOpenAiScout={() => setIsAiModalOpen(true)}
+                />
+                <SouthAmericanFootballSection />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </main>
+      </div>
 
       {/* Footer */}
       <footer className="border-t border-white/5 bg-neutral-950 py-10 mt-16 text-center text-xs text-white/40 space-y-2">

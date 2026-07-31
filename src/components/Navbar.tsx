@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Sparkles, Menu, X, Trophy, BarChart3, Activity, Shield, Users } from "lucide-react";
+import villalbaImage from "../assets/images/luciano_villalba_portrait_1785510513962.jpg";
 
 interface NavbarProps {
   activeTab: string;
@@ -22,23 +23,20 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, onOpenA
   const handleNavClick = (id: string) => {
     setActiveTab(id);
     setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-white/10 transition-all">
+    <header className="sticky top-0 z-50 bg-[#050505]/95 backdrop-blur-md border-b border-white/10 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
-        {/* Logo */}
+        {/* Logo with Player Photo Avatar */}
         <button
           onClick={() => handleNavClick("profile")}
           className="flex items-center gap-3 text-left group focus:outline-none"
         >
-          <div className="w-10 h-10 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-600/30 group-hover:scale-105 transition-transform">
-            V
+          <div className="w-11 h-11 rounded-2xl border border-indigo-500/40 overflow-hidden shadow-lg shadow-indigo-600/20 group-hover:scale-105 group-hover:border-indigo-400 transition-all bg-neutral-900 shrink-0">
+            <img src={villalbaImage} alt="Luciano Villalba" className="w-full h-full object-cover object-top" />
           </div>
           <div>
             <div className="font-extrabold text-base tracking-tight text-white uppercase flex items-center gap-2">
