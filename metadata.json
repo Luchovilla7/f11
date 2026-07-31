@@ -1,0 +1,6 @@
+{
+  "name": "Luciano Villalba - Stats & Tactical Analytics",
+  "description": "Plataforma profesional de analítica táctica, estadísticas avanzadas, xG, mapa de tiros y trayectoria de Luciano Villalba, junto con estadísticas del fútbol argentino y sudamericano.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
