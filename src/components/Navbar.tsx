@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Sparkles, Menu, X, Trophy, BarChart3, Activity, Shield, Users } from "lucide-react";
+import { Sparkles, Menu, X, Trophy, BarChart3, Activity, Shield, Users, Globe } from "lucide-react";
 import villalbaImage from "../assets/images/luciano_villalba_portrait_1785510513962.jpg";
 
 interface NavbarProps {
@@ -18,6 +18,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, onOpenA
     { id: "seleccion", label: "SELECCIÓN ARGENTINA", icon: Users },
     { id: "fútbol-argentino", label: "FÚTBOL ARGENTINO", icon: Trophy },
     { id: "fútbol-sudamericano", label: "FÚTBOL SUDAMERICANO", icon: Trophy },
+    { id: "palmares-internacional", label: "PALMARÉS INTERNACIONAL", icon: Globe },
   ];
 
   const handleNavClick = (id: string) => {

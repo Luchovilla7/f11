@@ -10,6 +10,7 @@ import { PalmaresSection } from "./components/PalmaresSection";
 import { NationalTeamSection } from "./components/NationalTeamSection";
 import { ArgentineFootballSection } from "./components/ArgentineFootballSection";
 import { SouthAmericanFootballSection } from "./components/SouthAmericanFootballSection";
+import { InternationalPalmaresSection } from "./components/InternationalPalmaresSection";
 import { AiTacticalScoutModal } from "./components/AiTacticalScoutModal";
 
 export default function App() {
@@ -147,6 +148,27 @@ export default function App() {
                   onOpenAiScout={() => setIsAiModalOpen(true)}
                 />
                 <SouthAmericanFootballSection />
+              </motion.div>
+            )}
+
+            {activeTab === "palmares-internacional" && (
+              <motion.div
+                key="palmares-internacional"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-6"
+              >
+                <PageHeader
+                  title="Palmarés Internacional de Selecciones"
+                  subtitle="Historial oficial de títulos de la Copa Mundial de la FIFA y los 6 torneos continentales de selecciones nacionales."
+                  badge="FIFA & Confederaciones"
+                  badgeColor="amber"
+                  onGoToProfile={() => setActiveTab("profile")}
+                  onOpenAiScout={() => setIsAiModalOpen(true)}
+                />
+                <InternationalPalmaresSection />
               </motion.div>
             )}
           </AnimatePresence>
