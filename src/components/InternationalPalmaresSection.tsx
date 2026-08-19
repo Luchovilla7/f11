@@ -55,7 +55,7 @@ export const InternationalPalmaresSection: React.FC = () => {
           </div>
           <div>
             <div className="text-2xl font-black text-white tracking-tight">
-              7 Torneos Globales
+              {internationalPalmares.length} Torneos Globales
             </div>
             <div className="text-xs text-white/60 font-medium">
               Palmarés Histórico de Selecciones Nacionales

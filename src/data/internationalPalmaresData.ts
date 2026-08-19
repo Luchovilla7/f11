@@ -146,4 +146,22 @@ export const internationalPalmares: TournamentPalmares[] = [
       { country: "Islas Salomón", flag: "🇸🇧", years: [2016], confederation: "OFC" },
     ],
   },
+  {
+    id: "copa-americas",
+    name: "Copa de las Américas",
+    confederation: "CONMEBOL - CONCACAF",
+    regionName: "América Intercontinental",
+    badgeColor: "from-purple-500/20 to-indigo-600/20 border-purple-500/30 text-purple-300",
+    iconEmoji: "🌎",
+    description: "Desafío intercontinental a partido único entre el campeón de Sudamérica (CONMEBOL) y el campeón de la CONCACAF.",
+    champions: [
+      { country: "Argentina", flag: "🇦🇷", years: [1978, 1987, 1993, 2002, 2023, 2026], confederation: "CONMEBOL" },
+      { country: "Brasil", flag: "🇧🇷", years: [1975, 1999, 2005, 2008, 2020], confederation: "CONMEBOL" },
+      { country: "México", flag: "🇲🇽", years: [1984, 1996, 2017], confederation: "CONCACAF" },
+      { country: "Uruguay", flag: "🇺🇾", years: [1969, 1972, 2011], confederation: "CONMEBOL" },
+      { country: "EE. UU.", flag: "🇺🇸", years: [2014], confederation: "CONCACAF" },
+      { country: "Colombia", flag: "🇨🇴", years: [1981], confederation: "CONMEBOL" },
+      { country: "Costa Rica", flag: "🇨🇷", years: [1990], confederation: "CONCACAF" },
+    ],
+  },
 ];
