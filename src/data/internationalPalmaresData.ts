@@ -27,12 +27,13 @@ export const internationalPalmares: TournamentPalmares[] = [
     description: "Palmarés histórico oficial del torneo más prestigioso del fútbol mundial.",
     champions: [
       { country: "Inglaterra", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", years: [1969, 1981, 1996, 2017], confederation: "UEFA" },
-      { country: "Brasil", flag: "🇧🇷", years: [1972, 1975, 2002, 2005], confederation: "CONMEBOL" },
+      { country: "Brasil", flag: "🇧🇷", years: [1975, 2002, 2005], confederation: "CONMEBOL" },
       { country: "Alemania", flag: "🇩🇪", years: [1987, 1990, 2014], confederation: "UEFA" },
       { country: "Argentina", flag: "🇦🇷", years: [1978, 1993, 2023], confederation: "CONMEBOL" },
       { country: "Italia", flag: "🇮🇹", years: [1984, 2008], confederation: "UEFA" },
       { country: "Francia", flag: "🇫🇷", years: [1999, 2020], confederation: "UEFA" },
       { country: "España", flag: "🇪🇸", years: [2011, 2026], confederation: "UEFA" },
+      { country: "Uruguay", flag: "🇺🇾", years: [1972], confederation: "CONMEBOL" },
     ],
   },
   {

@@ -74,7 +74,7 @@ export const AdvancedStatsOverview: React.FC = () => {
               Análisis de Rendimiento & <span className="text-indigo-400">Expected Goals (xG)</span>
             </h2>
             <p className="text-white/60 text-xs sm:text-sm mt-1 max-w-2xl font-normal">
-              Visualización interactiva del sobrerendimiento de gol (+25.6 xG), volumen de tiros, generación de asistencias esperadas (xA) y radar de atributos biomecánicos.
+              Visualización interactiva del sobrerendimiento de gol ({villalbaProfile.xGOverperformance} xG), volumen de tiros, generación de asistencias esperadas (xA) y radar de atributos biomecánicos.
             </p>
           </div>
 
@@ -183,7 +183,7 @@ export const AdvancedStatsOverview: React.FC = () => {
             <div className="p-3 bg-neutral-950 rounded-2xl border border-white/5 text-xs text-white/80 flex items-center gap-3">
               <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-[10px] uppercase">Dato Clave</span>
               <span>
-                En su pico de 25 años en el Barcelona (38 goles vs 32.8 xG) y 31 años en el Osaka (36 goles vs 31.5 xG), Luciano registró índices de definición del top 1% mundial.
+                En su pico de 25 años en el Barcelona (38 goles vs 32.8 xG) y 30 años en el Osaka (36 goles vs 31.5 xG), Luciano registró índices de definición del top 1% mundial.
               </span>
             </div>
           </div>

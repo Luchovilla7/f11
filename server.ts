@@ -41,7 +41,7 @@ Tu tarea es proporcionar análisis tácticos avanzados sobre el jugador profesio
 
 Contexto del jugador:
 - Posición: Extremo Izquierdo / Inside Forward / Falso 9 / Segundo Delantero.
-- Estadísticas de carrera a nivel de clubes: 568 partidos, 338 goles (promedio 0.60 G/P). xG acum: 312.4 (+25.6 sobrerendimiento de xG).
+- Estadísticas de carrera a nivel de clubes: 610 partidos, 349 goles (promedio 0.57 G/P). xG acum: 314.9 (+34.1 sobrerendimiento de xG).
 - Selección Argentina: 41 partidos, 26 goles (promedio 0.63 G/P). 4 goles en Copa Mundial 2023 y 3 goles en Copa Mundial 2026.
 - Características principales:
   * Regate hacia dentro desde la banda izquierda con aceleración explosiva (68.4% regates completados).
