@@ -274,7 +274,7 @@ export const ligaArgentinaData: ProvincialPalmares[] = [
 ];
 
 export const copaArgentinaData: ProvincialPalmares[] = [
-  { prov: "Misiones", titulos: 12, years: [1965, 1971, 1974, 1978, 1983, 1986, 1990, 1994, 1998, 2003, 2009, 2015, 2024, 2029] },
+  { prov: "Misiones", titulos: 13, years: [1965, 1971, 1974, 1978, 1983, 1986, 1990, 1994, 1998, 2003, 2009, 2015, 2024] },
   { prov: "Buenos Aires", titulos: 9, years: [1966, 1970, 1975, 1980, 1987, 1992, 2001, 2013, 2020] },
   { prov: "CABA", titulos: 7, years: [1967, 1972, 1976, 1981, 1985, 2002, 2018] },
   { prov: "Córdoba", titulos: 5, years: [1968, 1973, 1988, 1989, 2006, 2014, 2016] },

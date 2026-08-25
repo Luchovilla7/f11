@@ -33,7 +33,6 @@ export const internationalPalmares: TournamentPalmares[] = [
       { country: "Italia", flag: "🇮🇹", years: [1984, 2008], confederation: "UEFA" },
       { country: "Francia", flag: "🇫🇷", years: [1999, 2020], confederation: "UEFA" },
       { country: "España", flag: "🇪🇸", years: [2011, 2026], confederation: "UEFA" },
-      { country: "Uruguay", flag: "🇺🇾", years: [1996], confederation: "CONMEBOL" },
     ],
   },
   {
@@ -65,8 +64,8 @@ export const internationalPalmares: TournamentPalmares[] = [
       { country: "Inglaterra", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", years: [1968, 1995, 1998, 2013, 2019], confederation: "UEFA" },
       { country: "Italia", flag: "🇮🇹", years: [1980, 1983, 1989, 2022], confederation: "UEFA" },
       { country: "Alemania", flag: "🇩🇪", years: [1971, 1974, 2007], confederation: "UEFA" },
-      { country: "Francia", flag: "🇫🇷", years: [1986, 2001], confederation: "UEFA" },
       { country: "España", flag: "🇪🇸", years: [2010, 2025], confederation: "UEFA" },
+      { country: "Francia", flag: "🇫🇷", years: [2001], confederation: "UEFA" },
       { country: "Países Bajos", flag: "🇳🇱", years: [1986], confederation: "UEFA" },
       { country: "Portugal", flag: "🇵🇹", years: [2016], confederation: "UEFA" },
       { country: "Grecia", flag: "🇬🇷", years: [2004], confederation: "UEFA" },
@@ -118,7 +117,7 @@ export const internationalPalmares: TournamentPalmares[] = [
     iconEmoji: "🌍",
     description: "Certamen continental supremo entre selecciones africanas.",
     champions: [
-      { country: "Egipto", flag: "🇪🇬", years: [1986, 1998, 2007, 2010], confederation: "CAF" },
+      { country: "Egipto", flag: "🇪🇬", years: [1986, 2007, 2010], confederation: "CAF" },
       { country: "Camerún", flag: "🇨🇲", years: [1983, 1989, 2001], confederation: "CAF" },
       { country: "Ghana", flag: "🇬🇭", years: [1968, 1971, 1977], confederation: "CAF" },
       { country: "Costa de Marfil", flag: "🇨🇮", years: [1992, 2016, 2022], confederation: "CAF" },
