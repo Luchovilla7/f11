@@ -302,7 +302,7 @@ export const supercopaArgentinaData: ProvincialPalmares[] = [
   { prov: "Santa Fe", titulos: 6, years: [1970, 1978, 1983, 1986, 1999, 2005] },
   { prov: "Misiones", titulos: 5, years: [1984, 1987, 2016, 2018, 2025] },
   { prov: "Tucumán", titulos: 4, years: [1980, 1996, 2014, 2020] },
-  { prov: "Entre Ríos", titulos: 3, years: [1991, 1997, 2006] },
+  { prov: "Entre Ríos", titulos: 2, years: [1991, 1997] },
   { prov: "Chaco", titulos: 1, years: [2008] },
   { prov: "Catamarca", titulos: 1, years: [2009] },
   { prov: "Neuquén", titulos: 1, years: [2012] },
